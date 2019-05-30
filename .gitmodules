@@ -1,3 +1,3 @@
 [submodule "cjieba"]
 	path = cjieba
-	url = git@github.com:yanyiwu/cjieba.git
+	url = https://github.com/yanyiwu/cjieba.git
