@@ -74,6 +74,8 @@ Fmake_jieba(emacs_env *env, ptrdiff_t nargs,
       paths[i] = copy_string_from_emacs(env, args[i]);
     }
 
+  /* FIXME: cjieba calls abort() upon failing loading dictionaries,
+     +     which breaks emacs. */
   Jieba dict = NewJieba(paths[0], paths[1], paths[2], paths[3], paths[4]);
 
   for (int i = 0; i < 5; i++)
