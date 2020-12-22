@@ -14,7 +14,7 @@
     (when (reduce (lambda (a b) (and (file-exists-p a) b))
                   (append dicts '(t)))
 
-      (setq ejieba-dictionary-path
+      (setq ejieba-dictionary
             (apply 'ejieba--make-jieba dicts)))))
 
 (defun ejieba-split-words (string)
